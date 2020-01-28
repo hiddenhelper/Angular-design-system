@@ -1,0 +1,17 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../../out-tsc/app",
+    "baseUrl": "./",
+    "resolveJsonModule": true,
+    "target": "es2015",
+    "paths": {
+      "@clr/angular": ["../clr-angular"],
+      "@clr/icons": ["../clr-icons"],
+      "@clr/icons/shapes/*": ["../clr-icons/shapes", "../clr-icons/shapes/*"],
+      "@clr/core": ["../clr-core"],
+      "@clr/core/*": ["../clr-core/*"]
+    }
+  },
+  "files": ["src/main.ts", "src/polyfills.ts", "typings.d.ts"]
+}
